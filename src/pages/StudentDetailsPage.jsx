@@ -1,4 +1,4 @@
-import StudentDetails from "../components/StudentDetails.jsx";
+import StudentDetails from "../bin/StudentDetails.jsx";
 
 
 const StudentDetailsPage = () => {
