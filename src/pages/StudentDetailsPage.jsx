@@ -7,6 +7,7 @@ const StudentDetailsPage = () => {
     return (
         <div className={ "studentTable" }>
             <table id={ "students" }>
+                <thead>
                 <tr>
                     <th className={ "table-head" }>ID</th>
                     <th className={ "table-head" }>Name</th>
@@ -14,6 +15,8 @@ const StudentDetailsPage = () => {
                     <th className={ "table-head" }>Address</th>
                     <th className={ "table-head" }></th>
                 </tr>
+                </thead>
+                <tbody>
                 {studentDetails.map((student, id) => (
                     <tr key={ id }>
                         <td className={ "table-data" }>{student.id}</td>
@@ -26,6 +29,7 @@ const StudentDetailsPage = () => {
                         </td>
                     </tr>
                 ))}
+                </tbody>
             </table>
         </div>
     );
