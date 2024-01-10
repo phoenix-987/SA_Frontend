@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 
 const StudentDetails = () => {
     let [students, setStudents] = useState({details: []});
+    // const [refreshKey, setRefreshKey] = useState(0);
 
     useEffect(() => {getStudents()}, []);
 
