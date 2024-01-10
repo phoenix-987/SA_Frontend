@@ -31,7 +31,7 @@ const AddDataFormPage = () => {
         postStudent();
         // console.log(e);
         setIsVisible(false)
-
+        window.location.reload(true);
     }
 
     const postStudent = () => {
