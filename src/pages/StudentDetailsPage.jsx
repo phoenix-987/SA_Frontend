@@ -1,3 +1,4 @@
+import DeleteData from "../bin/DeleteData.jsx";
 import StudentDetails from "../bin/StudentDetails.jsx";
 
 
@@ -25,7 +26,7 @@ const StudentDetailsPage = () => {
                         <td className={ "table-data" }>{student.address}</td>
                         <td className={ "table-data" }>
                             <button className={ "button editButton" }>Edit</button>
-                            <button className={ "button deleteButton" }>Delete</button>
+                            <button className={ "button deleteButton" } onClick={() => DeleteData(student.id)}>Delete</button>
                         </td>
                     </tr>
                 ))}
