@@ -7,7 +7,7 @@ const editData = (editedData) => {
 
 	try {
 		axios.put(
-			"http://localhost:8000/api/put/?id=" + editedData.id,
+			import.meta.env.VITE_PUT_URL + editedData.id,
 			editedData
 		);
 		response = "Data updated successfully";

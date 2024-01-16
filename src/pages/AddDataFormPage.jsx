@@ -33,7 +33,7 @@ const AddDataFormPage = () => {
 	};
 
 	const postStudent = () => {
-		axios.post("http://localhost:8000/api/post/", {
+		axios.post(import.meta.env.VITE_POST_URL, {
 			id: sid,
 			name: name,
 			age: age,

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const DeleteData = (id) => {
-	axios.delete("http://localhost:8000/api/delete/?id=" + id);
+	axios.delete(import.meta.env.VITE_DELETE_URL + id);
 	window.location.reload(true);
 };
 
