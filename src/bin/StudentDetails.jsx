@@ -1,25 +1,23 @@
-import axios from 'axios';
-import { useState, useEffect } from 'react';
-
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 const StudentDetails = () => {
-    let [students, setStudents] = useState({details: []});
-    // const [refreshKey, setRefreshKey] = useState(0);
+	const [students, setStudents] = useState({ details: [] });
 
-    useEffect(() => {getStudents()}, []);
+	useEffect(() => {
+		getStudents();
+	}, []);
 
-    const getStudents = () => {
-        let data;
+	const getStudents = () => {
+		let data;
 
-        axios.get('http://localhost:8000/api/get/').then(
-            res => {
-                data = res.data;
-                setStudents({details: data});
-            }
-        );
-    }
+		axios.get("http://localhost:8000/api/get/").then((res) => {
+			data = res.data;
+			setStudents({ details: data });
+		});
+	};
 
-    return students.details;
-}
+	return students.details;
+};
 
 export default StudentDetails;
