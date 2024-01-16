@@ -1,58 +1,61 @@
-body{
-    font-family: Helvetica, sans-serif;
+body {
+	font-family: Helvetica, sans-serif;
 }
 
-.header{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.header {
+	text-align: center;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#students{
-    margin: 0% 0%;
-    border-collapse: collapse;
-    width: 100%;
+#students {
+	margin: 0% 0%;
+	border-collapse: collapse;
+	width: 100%;
 }
 
-table{
-    border: 1px solid #ddd;
-    padding: 8px;
+table {
+	border: 1px solid #ddd;
+	padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2;}
-
-.table-head{
-    text-align: center;
-    padding: 1rem 1.2rem;
-    background-color: #04AA6D;
+tr:nth-child(even) {
+	background-color: #f2f2f2;
 }
 
-.table-data{
-    text-align: center;
-    padding: 0.2rem 1.2rem;
+.table-head {
+	text-align: center;
+	padding: 1rem 1.2rem;
+	background-color: #04aa6d;
 }
 
-.button{
-    border: 0;
-    border-radius: 1rem;
-    padding: 0.3rem 1rem;
-    margin: 0.4rem 0rem 0.2rem 2rem;
+.table-data {
+	text-align: center;
+	padding: 0.2rem 1.2rem;
 }
 
-.editButton{
-    color: black;
-    background-color: lightgray;
+.button {
+	border: 0;
+	border-radius: 1rem;
+	padding: 0.3rem 1rem;
+	margin: 0.4rem 0rem 0.2rem 2rem;
 }
 
-.editButton:hover{
-    color: aliceblue;
-    background-color: rgb(45, 94, 227);
+.editButton {
+	color: black;
+	background-color: lightgray;
 }
 
-.deleteButton{
-    color: aliceblue;
-    background-color: black;
+.editButton:hover {
+	color: aliceblue;
+	background-color: rgb(45, 94, 227);
 }
 
-.deleteButton:hover{
-    background-color: rgb(226, 20, 20);
+.deleteButton {
+	color: aliceblue;
+	background-color: black;
+}
+
+.deleteButton:hover {
+	background-color: rgb(226, 20, 20);
 }
